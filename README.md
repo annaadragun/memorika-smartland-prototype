@@ -14,24 +14,14 @@
 - Поведение: [`src/scripts/app.js`](src/scripts/app.js)
 - Переводы и демонстрационные данные: [`src/scripts/data/content.js`](src/scripts/data/content.js)
 - Изображения: [`src/assets/images/`](src/assets/images/)
-- Собранная страница: `dist/` — создаётся автоматически и не хранится в Git.
 
 ## Локальный запуск
 
 ```sh
-python3 scripts/build.py
-python3 -m http.server 4173 --directory dist
+npx serve src
 ```
 
-Откройте `http://127.0.0.1:4173`.
-
-## Проверка
-
-```sh
-python3 scripts/validate.py
-```
-
-Проверка не требует сторонних библиотек: она контролирует локальные ссылки на ассеты, импорты JavaScript-модулей и структуру CSS.
+Можно также открыть `src/` через Live Server в редакторе. Отдельной сборки нет.
 
 ## Автодеплой GitHub Pages
 
@@ -39,10 +29,9 @@ Workflow находится в [`.github/workflows/deploy-pages.yml`](.github/wo
 
 После каждого push в `main` GitHub Actions:
 
-1. проверяет исходники;
-2. собирает `dist/` из `src/`;
-3. загружает результат в GitHub Pages;
-4. публикует новую версию страницы.
+1. забирает актуальный репозиторий;
+2. загружает `src/` в GitHub Pages;
+3. публикует новую версию страницы.
 
 Ручной запуск также доступен через `workflow_dispatch`.
 

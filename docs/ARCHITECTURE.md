@@ -13,9 +13,9 @@ src/scripts/core/           DOM, state, navigation and UI primitives
 src/scripts/data/           Localized copy and exercise fixtures
 src/scripts/features/       Reserved for independently owned product flows
 src/assets/images/          Runtime image assets
-scripts/                    Validation and deterministic static build
-dist/                       Generated deployable artifact, never edited
 ```
+
+`src/` is both the source of truth and the deployable static site. No generated copy is kept in the repository.
 
 ## Screen model
 
