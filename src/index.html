@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#5727a3" />
     <meta name="description" content="Интерактивный концепт оболочки курса Memorika — Smartland Academy." />
     <title>Smartland Academy — Memorika prototype</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/app.css" />
   </head>
   <body>
     <div class="app-shell">
@@ -37,7 +37,7 @@
           </div>
 
           <div class="campus-map" aria-label="Карта Smartland Academy">
-            <img src="assets/smartland-campus.png" alt="Кампус Smartland Academy с четырьмя учебными павильонами" />
+            <img src="assets/images/smartland-campus.png" alt="Кампус Smartland Academy с четырьмя учебными павильонами" />
             <div class="campus-shade" aria-hidden="true"></div>
 
             <button class="map-pin pin-images" type="button" data-zone="images" style="--zone:#ec4b7a;--zone-soft:#fff0f5">
@@ -87,7 +87,7 @@
               <span class="zone-kicker" id="zone-kicker">Библиотека историй</span>
               <h2 id="settings-title"><span data-i18n="train">Тренируем</span> <em id="zone-title">слова</em></h2>
               <p data-i18n="mindyTip">Я покажу элементы по одному. Постарайся связать их в историю — так запоминать легче.</p>
-              <div class="character character-mindy" role="img" aria-label="Минди — помощница ученика"><img src="assets/mindy-maximus.png" alt="" /></div>
+              <div class="character character-mindy" role="img" aria-label="Минди — помощница ученика"><img src="assets/images/mindy-maximus.png" alt="" /></div>
               <div class="speech-chip"><span>✦</span><span data-i18n="mindyReady">Минди уже готова</span></div>
             </div>
 
@@ -160,7 +160,7 @@
           </div>
           <div class="homework-hero">
             <div><span class="eyebrow" data-i18n="todayRoute">Маршрут на сегодня</span><h2 id="homework-title" data-i18n="memoryTraining">Нейротренировка</h2><p data-i18n="homeworkIntro">Пять коротких этапов закрепляют то, что было на уроке. Активный этап можно пройти сейчас.</p></div>
-            <div class="mentor-mini"><div class="character character-maximus"><img src="assets/mindy-maximus.png" alt="" /></div><p><b data-i18n="maximus">Максимус</b><span data-i18n="maximusTip">В каждой миссии тебя ждёт новая карточка-открытие.</span></p></div>
+            <div class="mentor-mini"><div class="character character-maximus"><img src="assets/images/mindy-maximus.png" alt="" /></div><p><b data-i18n="maximus">Максимус</b><span data-i18n="maximusTip">В каждой миссии тебя ждёт новая карточка-открытие.</span></p></div>
           </div>
           <div class="route-wrap">
             <div class="route-line" aria-hidden="true"></div>
@@ -176,7 +176,7 @@
         <section class="screen mission-screen" data-screen="mission" aria-labelledby="mission-title">
           <div class="screen-toolbar"><button class="back-button" type="button" data-action="homework"><span aria-hidden="true">‹</span><span data-i18n="route">Маршрут</span></button><span class="step-label"><span data-i18n="stage">Этап</span> 2 / 5</span></div>
           <div class="mission-layout">
-            <div class="mystery-panel"><span class="eyebrow" data-i18n="mysteryCard">Карточка-открытие</span><div class="mystery-card"><span>?</span><i></i><b></b></div><h2 id="mission-title" data-i18n="openSecret">Открой новый секрет памяти</h2><p data-i18n="missionIntro">Выполни упражнение — и Максимус покажет, что скрывается на карточке.</p><div class="character character-maximus"><img src="assets/mindy-maximus.png" alt="" /></div></div>
+            <div class="mystery-panel"><span class="eyebrow" data-i18n="mysteryCard">Карточка-открытие</span><div class="mystery-card"><span>?</span><i></i><b></b></div><h2 id="mission-title" data-i18n="openSecret">Открой новый секрет памяти</h2><p data-i18n="missionIntro">Выполни упражнение — и Максимус покажет, что скрывается на карточке.</p><div class="character character-maximus"><img src="assets/images/mindy-maximus.png" alt="" /></div></div>
             <div class="mission-brief"><span class="brief-label" data-i18n="teacherSet">Задано преподавателем</span><h3 data-i18n="storyChain">Цепочка историй</h3><p data-i18n="missionBriefText">Запомни пять слов по порядку и восстанови первое слово.</p><dl><div><dt data-i18n="difficulty">Сложность</dt><dd data-i18n="medium">Средне</dd></div><div><dt data-i18n="displayTime">Время показа</dt><dd>2,0 <span data-i18n="secondsShort">сек</span></dd></div><div><dt data-i18n="items">Количество элементов</dt><dd>5</dd></div></dl><button class="primary-button" type="button" data-action="start-mission" data-i18n="startMission">Начать миссию</button><small class="brief-footnote" data-i18n="missionFootnote">Параметры домашнего задания фиксированы преподавателем.</small></div>
           </div>
         </section>
@@ -185,13 +185,13 @@
           <div class="discovery-card">
             <div class="discovery-illustration" aria-hidden="true"><span>✦</span><div class="brain-path"><i></i><i></i><i></i><i></i></div></div>
             <div class="discovery-copy"><span class="eyebrow" data-i18n="cardOpened">Карточка открыта</span><h2 id="discovery-title" data-i18n="storiesConnect">Истории создают связи</h2><p data-i18n="discoveryText">Когда ты соединяешь слова в необычный сюжет, мозг получает не пять отдельных элементов, а один яркий маршрут.</p><blockquote data-i18n="maximusQuote">«Чем неожиданнее связь, тем надёжнее воспоминание».</blockquote><button class="primary-button" type="button" data-action="homework" data-i18n="nextStage">К следующему этапу</button></div>
-            <div class="character character-maximus"><img src="assets/mindy-maximus.png" alt="" /></div>
+            <div class="character character-maximus"><img src="assets/images/mindy-maximus.png" alt="" /></div>
           </div>
         </section>
       </main>
     </div>
 
     <div class="toast" role="status" aria-live="polite" id="toast"></div>
-    <script src="app.js"></script>
+    <script type="module" src="scripts/app.js"></script>
   </body>
 </html>
