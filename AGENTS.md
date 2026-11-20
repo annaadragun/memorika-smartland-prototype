@@ -21,3 +21,4 @@
 - Preview `src/` through a local static server when browser verification is needed.
 - Update `README.md` and relevant files in `docs/` when architecture, flows, or handoff expectations change.
 - Push to `main`; GitHub Actions deploys `src/` automatically.
+- Create milestone releases with annotated `v*` tags; the release workflow publishes the matching GitHub Release automatically.

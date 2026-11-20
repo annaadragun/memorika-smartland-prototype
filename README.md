@@ -35,6 +35,21 @@ Workflow находится в [`.github/workflows/deploy-pages.yml`](.github/wo
 
 Ручной запуск также доступен через `workflow_dispatch`.
 
+## Версии и Releases
+
+- `main` всегда публикуется как актуальная версия GitHub Pages.
+- Теги формата `v*` автоматически создают GitHub Release.
+- Каждый Release привязан к конкретному commit и содержит стандартные ZIP/TAR-архивы этой версии.
+
+Пример выпуска следующего этапа:
+
+```sh
+git tag -a v0.2.0 -m "Campus and navigation update"
+git push origin v0.2.0
+```
+
+Workflow создания выпусков находится в [`.github/workflows/release.yml`](.github/workflows/release.yml).
+
 ## Структура сценариев
 
 ```text
