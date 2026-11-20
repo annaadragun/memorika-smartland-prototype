@@ -2,6 +2,10 @@
 
 Кликабельный адаптивный RU/EN-прототип оболочки курса Memorika. Проект показывает два основных пользовательских сценария: свободную тренировку и назначенную преподавателем Нейротренировку.
 
+[![Deploy prototype to GitHub Pages](https://github.com/annaadragun/memorika-smartland-prototype/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/annaadragun/memorika-smartland-prototype/actions/workflows/deploy-pages.yml)
+
+Публичная версия: [annaadragun.github.io/memorika-smartland-prototype](https://annaadragun.github.io/memorika-smartland-prototype/)
+
 ## Где находится страница
 
 - Исходный код: [`src/`](src/)
