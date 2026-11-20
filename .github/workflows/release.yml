@@ -24,4 +24,8 @@ jobs:
             --verify-tag \
             --title "Smartland Academy $GITHUB_REF_NAME" \
             --generate-notes \
-            --notes $'Current live site: https://annaadragun.github.io/memorika-smartland-prototype/\n\nThe ZIP and TAR archives below preserve the repository exactly as it was at this release tag.'
+            --notes "Versioned live preview: https://annaadragun.github.io/memorika-smartland-prototype/versions/$GITHUB_REF_NAME/
+
+          Latest live site: https://annaadragun.github.io/memorika-smartland-prototype/
+
+          The ZIP and TAR archives below preserve the repository exactly as it was at this release tag."
