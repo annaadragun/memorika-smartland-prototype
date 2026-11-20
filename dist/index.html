@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#5727a3" />
+    <meta name="description" content="Интерактивный концепт оболочки курса Memorika — Smartland Academy." />
+    <title>Smartland Academy — Memorika prototype</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <button class="brand" type="button" data-action="home" aria-label="Smartland Academy — главная">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span><strong>Smartland</strong><small>ACADEMY · MEMORIKA</small></span>
+        </button>
+
+        <div class="topbar-tools">
+          <div class="progress-chip" aria-label="Прогресс курса">
+            <span class="progress-orbit" aria-hidden="true"><b style="--progress: 64%"></b></span>
+            <span><strong>64%</strong><small data-i18n="courseProgress">курс пройден</small></span>
+          </div>
+          <button class="lang-switch" type="button" data-action="language" aria-label="Switch language">
+            <span class="lang-active">RU</span><span>EN</span>
+          </button>
+          <button class="avatar-button" type="button" aria-label="Профиль ученика">А</button>
+        </div>
+      </header>
+
+      <main id="app" tabindex="-1">
+        <section class="screen is-active" data-screen="campus" aria-labelledby="campus-title">
+          <div class="campus-copy">
+            <span class="eyebrow"><span class="live-dot"></span><span data-i18n="conceptBadge">Концепт-прототип</span></span>
+            <h1 id="campus-title" data-i18n="campusTitle">Твой кампус памяти</h1>
+            <p data-i18n="campusIntro">Выбирай направление, тренируй навык и возвращайся сильнее.</p>
+          </div>
+
+          <div class="campus-map" aria-label="Карта Smartland Academy">
+            <img src="assets/smartland-campus.png" alt="Кампус Smartland Academy с четырьмя учебными павильонами" />
+            <div class="campus-shade" aria-hidden="true"></div>
+
+            <button class="map-pin pin-images" type="button" data-zone="images" style="--zone:#ec4b7a;--zone-soft:#fff0f5">
+              <span class="zone-symbol gallery-symbol" aria-hidden="true"><i></i><i></i></span>
+              <span><strong data-i18n="images">Изображения</strong><small data-i18n="gallery">Галерея эйдетики</small></span>
+            </button>
+            <button class="map-pin pin-tables" type="button" data-zone="tables" style="--zone:#6b48d7;--zone-soft:#f1edff">
+              <span class="zone-symbol observatory-symbol" aria-hidden="true"><i></i></span>
+              <span><strong data-i18n="tables">Таблицы</strong><small data-i18n="observatory">Обсерватория</small></span>
+            </button>
+            <button class="map-pin pin-numbers" type="button" data-zone="numbers" style="--zone:#f49b21;--zone-soft:#fff5df">
+              <span class="zone-symbol code-symbol" aria-hidden="true">7</span>
+              <span><strong data-i18n="numbers">Числа</strong><small data-i18n="cipherTower">Башня шифров</small></span>
+            </button>
+            <button class="map-pin pin-words" type="button" data-zone="words" style="--zone:#08a69a;--zone-soft:#e7fbf8">
+              <span class="zone-symbol book-symbol" aria-hidden="true"><i></i></span>
+              <span><strong data-i18n="words">Слова</strong><small data-i18n="library">Библиотека историй</small></span>
+            </button>
+
+            <button class="homework-dock" type="button" data-action="homework">
+              <span class="dock-icon" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="dock-copy"><small data-i18n="nextLesson">Следующая миссия</small><strong data-i18n="memoryTraining">Нейротренировка</strong></span>
+              <span class="dock-progress"><b><i style="width:40%"></i></b><small>2 / 5</small></span>
+              <span class="dock-button" data-i18n="open">Открыть</span>
+            </button>
+          </div>
+
+          <div class="mobile-zone-grid" aria-label="Направления тренировки">
+            <button type="button" data-zone="images" style="--zone:#ec4b7a"><span class="zone-symbol gallery-symbol"><i></i><i></i></span><strong data-i18n="images">Изображения</strong><small data-i18n="gallery">Галерея эйдетики</small></button>
+            <button type="button" data-zone="numbers" style="--zone:#f49b21"><span class="zone-symbol code-symbol">7</span><strong data-i18n="numbers">Числа</strong><small data-i18n="cipherTower">Башня шифров</small></button>
+            <button type="button" data-zone="words" style="--zone:#08a69a"><span class="zone-symbol book-symbol"><i></i></span><strong data-i18n="words">Слова</strong><small data-i18n="library">Библиотека историй</small></button>
+            <button type="button" data-zone="tables" style="--zone:#6b48d7"><span class="zone-symbol observatory-symbol"><i></i></span><strong data-i18n="tables">Таблицы</strong><small data-i18n="observatory">Обсерватория</small></button>
+          </div>
+
+          <button class="mobile-homework" type="button" data-action="homework">
+            <span class="dock-icon"><i></i><i></i><i></i></span><span><small data-i18n="nextLesson">Следующая миссия</small><strong data-i18n="memoryTraining">Нейротренировка</strong></span><b>2 / 5</b>
+          </button>
+        </section>
+
+        <section class="screen settings-screen" data-screen="settings" aria-labelledby="settings-title">
+          <div class="screen-toolbar">
+            <button class="back-button" type="button" data-action="home"><span aria-hidden="true">‹</span><span data-i18n="campus">Кампус</span></button>
+            <span class="step-label" data-i18n="freeTraining">Свободная тренировка</span>
+          </div>
+          <div class="settings-layout">
+            <div class="guide-card">
+              <span class="zone-kicker" id="zone-kicker">Библиотека историй</span>
+              <h2 id="settings-title"><span data-i18n="train">Тренируем</span> <em id="zone-title">слова</em></h2>
+              <p data-i18n="mindyTip">Я покажу элементы по одному. Постарайся связать их в историю — так запоминать легче.</p>
+              <div class="character character-mindy" role="img" aria-label="Минди — помощница ученика"><img src="assets/mindy-maximus.png" alt="" /></div>
+              <div class="speech-chip"><span>✦</span><span data-i18n="mindyReady">Минди уже готова</span></div>
+            </div>
+
+            <form class="control-panel" id="training-form">
+              <div class="panel-heading"><span class="panel-icon" aria-hidden="true">☼</span><div><h3 data-i18n="setPace">Настрой свой темп</h3><p data-i18n="settingsHint">Начни с комфортного режима — сложность можно менять после каждой попытки.</p></div></div>
+
+              <fieldset class="field-group">
+                <legend data-i18n="difficulty">Сложность</legend>
+                <div class="segmented" role="group" aria-label="Сложность">
+                  <button type="button" data-level="1" data-i18n="easy">Легко</button>
+                  <button type="button" class="is-selected" data-level="2" data-i18n="medium">Средне</button>
+                  <button type="button" data-level="3" data-i18n="hard">Сложно</button>
+                </div>
+              </fieldset>
+
+              <label class="range-field">
+                <span><b data-i18n="displayTime">Время показа</b><output id="speed-value">2,0 <small data-i18n="secondsShort">сек</small></output></span>
+                <input id="speed" type="range" min="0.5" max="5" step="0.5" value="2" />
+                <span class="range-scale"><small data-i18n="faster">быстрее</small><small data-i18n="slower">спокойнее</small></span>
+              </label>
+
+              <label class="range-field">
+                <span><b data-i18n="items">Количество элементов</b><output id="items-value">5</output></span>
+                <input id="items" type="range" min="3" max="12" step="1" value="5" />
+                <span class="range-scale"><small>3</small><small>12</small></span>
+              </label>
+
+              <div class="session-summary"><span><i></i><span><small data-i18n="session">Сессия</small><b><span id="summary-items">5</span> <span data-i18n="examples">примеров</span></b></span></span><span><small data-i18n="about">около</small><b id="summary-time">35 сек</b></span></div>
+              <button class="primary-button" type="submit" data-i18n="startTraining">Начать тренировку</button>
+            </form>
+          </div>
+        </section>
+
+        <section class="screen practice-screen" data-screen="practice" aria-labelledby="practice-title">
+          <div class="practice-top">
+            <button class="close-button" type="button" data-action="leave-practice" aria-label="Закрыть">×</button>
+            <div class="practice-progress"><span><b id="practice-current">1</b> / <b id="practice-total">5</b></span><i><b id="practice-bar"></b></i></div>
+            <span class="focus-label"><i></i><span data-i18n="focusMode">Режим фокуса</span></span>
+          </div>
+          <div class="practice-stage" id="practice-stage">
+            <span class="stage-kicker" id="practice-kicker" data-i18n="remember">Запомни</span>
+            <h2 id="practice-title">Маяк</h2>
+            <p id="practice-hint" data-i18n="connectStory">Свяжи слово с предыдущим в одной яркой истории.</p>
+            <div class="memory-visual" aria-hidden="true"><span>✦</span><i></i><b></b></div>
+          </div>
+          <form class="recall-card" id="recall-form" hidden>
+            <span class="stage-kicker" data-i18n="yourTurn">Теперь твоя очередь</span>
+            <h2 data-i18n="whatRemembered">Что ты запомнил?</h2>
+            <p data-i18n="answerHint">Запиши первый элемент. Регистр букв не важен.</p>
+            <label><span data-i18n="answer">Твой ответ</span><input id="recall-input" autocomplete="off" placeholder="…" /></label>
+            <button class="primary-button" type="submit" data-i18n="checkAnswer">Проверить ответ</button>
+          </form>
+        </section>
+
+        <section class="screen result-screen" data-screen="result" aria-labelledby="result-title">
+          <div class="result-card">
+            <div class="result-burst" aria-hidden="true"><span>✓</span></div>
+            <span class="eyebrow" data-i18n="sessionComplete">Сессия завершена</span>
+            <h2 id="result-title" data-i18n="greatJob">Отличная работа!</h2>
+            <p data-i18n="resultText">Ты прошёл короткую демонстрацию цикла: настройка, показ, ответ и результат.</p>
+            <div class="result-stats"><span><small data-i18n="accuracy">Точность</small><b id="accuracy">100%</b></span><span><small data-i18n="completed">Выполнено</small><b>1 / 1</b></span><span><small data-i18n="tempo">Темп</small><b data-i18n="steady">Уверенный</b></span></div>
+            <div class="result-actions"><button class="secondary-button" type="button" data-action="repeat" data-i18n="repeat">Повторить</button><button class="primary-button" type="button" data-action="home" data-i18n="backCampus">Вернуться в кампус</button></div>
+          </div>
+        </section>
+
+        <section class="screen homework-screen" data-screen="homework" aria-labelledby="homework-title">
+          <div class="screen-toolbar">
+            <button class="back-button" type="button" data-action="home"><span aria-hidden="true">‹</span><span data-i18n="campus">Кампус</span></button>
+            <span class="step-label"><span data-i18n="course">Курс</span> · Memorika</span>
+          </div>
+          <div class="homework-hero">
+            <div><span class="eyebrow" data-i18n="todayRoute">Маршрут на сегодня</span><h2 id="homework-title" data-i18n="memoryTraining">Нейротренировка</h2><p data-i18n="homeworkIntro">Пять коротких этапов закрепляют то, что было на уроке. Активный этап можно пройти сейчас.</p></div>
+            <div class="mentor-mini"><div class="character character-maximus"><img src="assets/mindy-maximus.png" alt="" /></div><p><b data-i18n="maximus">Максимус</b><span data-i18n="maximusTip">В каждой миссии тебя ждёт новая карточка-открытие.</span></p></div>
+          </div>
+          <div class="route-wrap">
+            <div class="route-line" aria-hidden="true"></div>
+            <button class="mission-card is-complete" type="button" disabled><span class="mission-status">✓</span><small data-i18n="stage">Этап</small><b>1</b><strong data-i18n="images">Изображения</strong><em>5 / 5</em></button>
+            <button class="mission-card is-active" type="button" data-action="mission"><span class="mission-status">2</span><small data-i18n="stage">Этап</small><b>2</b><strong data-i18n="words">Слова</strong><em data-i18n="continue">Продолжить</em></button>
+            <button class="mission-card is-locked" type="button" disabled><span class="mission-status">⌁</span><small data-i18n="stage">Этап</small><b>3</b><strong data-i18n="numbers">Числа</strong><em data-i18n="locked">Закрыто</em></button>
+            <button class="mission-card is-locked" type="button" disabled><span class="mission-status">⌁</span><small data-i18n="stage">Этап</small><b>4</b><strong data-i18n="tables">Таблицы</strong><em data-i18n="locked">Закрыто</em></button>
+            <button class="mission-card is-locked" type="button" disabled><span class="mission-status">⌁</span><small data-i18n="stage">Этап</small><b>5</b><strong data-i18n="challenge">Финальный вызов</strong><em data-i18n="locked">Закрыто</em></button>
+          </div>
+          <div class="teacher-note"><span>“</span><p><small data-i18n="teacherComment">Комментарий преподавателя</small><b data-i18n="teacherText">Используй необычные образы — чем смешнее история, тем лучше она запомнится.</b></p></div>
+        </section>
+
+        <section class="screen mission-screen" data-screen="mission" aria-labelledby="mission-title">
+          <div class="screen-toolbar"><button class="back-button" type="button" data-action="homework"><span aria-hidden="true">‹</span><span data-i18n="route">Маршрут</span></button><span class="step-label"><span data-i18n="stage">Этап</span> 2 / 5</span></div>
+          <div class="mission-layout">
+            <div class="mystery-panel"><span class="eyebrow" data-i18n="mysteryCard">Карточка-открытие</span><div class="mystery-card"><span>?</span><i></i><b></b></div><h2 id="mission-title" data-i18n="openSecret">Открой новый секрет памяти</h2><p data-i18n="missionIntro">Выполни упражнение — и Максимус покажет, что скрывается на карточке.</p><div class="character character-maximus"><img src="assets/mindy-maximus.png" alt="" /></div></div>
+            <div class="mission-brief"><span class="brief-label" data-i18n="teacherSet">Задано преподавателем</span><h3 data-i18n="storyChain">Цепочка историй</h3><p data-i18n="missionBriefText">Запомни пять слов по порядку и восстанови первое слово.</p><dl><div><dt data-i18n="difficulty">Сложность</dt><dd data-i18n="medium">Средне</dd></div><div><dt data-i18n="displayTime">Время показа</dt><dd>2,0 <span data-i18n="secondsShort">сек</span></dd></div><div><dt data-i18n="items">Количество элементов</dt><dd>5</dd></div></dl><button class="primary-button" type="button" data-action="start-mission" data-i18n="startMission">Начать миссию</button><small class="brief-footnote" data-i18n="missionFootnote">Параметры домашнего задания фиксированы преподавателем.</small></div>
+          </div>
+        </section>
+
+        <section class="screen discovery-screen" data-screen="discovery" aria-labelledby="discovery-title">
+          <div class="discovery-card">
+            <div class="discovery-illustration" aria-hidden="true"><span>✦</span><div class="brain-path"><i></i><i></i><i></i><i></i></div></div>
+            <div class="discovery-copy"><span class="eyebrow" data-i18n="cardOpened">Карточка открыта</span><h2 id="discovery-title" data-i18n="storiesConnect">Истории создают связи</h2><p data-i18n="discoveryText">Когда ты соединяешь слова в необычный сюжет, мозг получает не пять отдельных элементов, а один яркий маршрут.</p><blockquote data-i18n="maximusQuote">«Чем неожиданнее связь, тем надёжнее воспоминание».</blockquote><button class="primary-button" type="button" data-action="homework" data-i18n="nextStage">К следующему этапу</button></div>
+            <div class="character character-maximus"><img src="assets/mindy-maximus.png" alt="" /></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="toast" role="status" aria-live="polite" id="toast"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
