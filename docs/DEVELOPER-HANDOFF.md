@@ -26,7 +26,7 @@
 - Mindy is the panda from the Memorika textbook. Preserve her familiar panda face, warm brown eyes, magenta bow and soft swept white fringe. Her current academic preppy outfit replaces the preschool-style dress: knitted raglan sweater, white shirt collar, structured skirt and discreet AMAKids diamond patch.
 - Both characters may be rendered in one polished visual style, but neither identity may be replaced or radically redesigned.
 - Mindy belongs on trainer settings screens and must be shown full-body. Maximus belongs on the AMAtraining question and post-task fact screens, not on the campus or route overview.
-- Campus venue mapping is fixed: `Visual Gallery → Pictures`, `Code Lab → Numbers`, `Story Library → Words`, `Focus Observatory → Grids`, and `Mission Center → AMAtraining`. Venue flags and trainer buttons are separate elements.
+- Campus venue mapping is fixed: `Visual Gallery → Pictures`, `Code Lab → Numbers`, `Story Library → Words`, `Focus Observatory → Grids`, and `Mission Center → AMAtraining`. Each free-training control is an accessible HTML pill containing a semantic icon, trainer name, and secondary venue name; AMAtraining is a separate bottom dock.
 - The current combined PNG is a prototype asset; production illustration should be approved against the official source artwork.
 
 ## Suggested API contracts

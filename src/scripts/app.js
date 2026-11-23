@@ -285,6 +285,10 @@ function bindEvents() {
     button.addEventListener("click", () => {
       const action = button.dataset.action;
       if (action === "home") showScreen("campus");
+      if (action === "back") {
+        if (window.history.length > 1) window.history.back();
+        else showToast(state.lang === "ru" ? "Возврат на платформу." : "Return to the platform.");
+      }
       if (action === "language") setLanguage(state.lang === "ru" ? "en" : "ru");
       if (action === "homework") showScreen("homework");
       if (action === "mission") showScreen("mission");

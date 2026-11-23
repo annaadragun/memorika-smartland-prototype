@@ -6,6 +6,7 @@ let toastTimer;
 export function showScreen(name, focus = true) {
   clearTimers();
   state.screen = name;
+  document.body.dataset.screen = name;
   $$(".screen").forEach((screen) => {
     screen.classList.toggle("is-active", screen.dataset.screen === name);
   });

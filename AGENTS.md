@@ -22,9 +22,10 @@
 - Venue names are fixed secondary signs: `Story Library`, `Code Lab`, `Visual Gallery`, `Focus Observatory`, and `Mission Center`. Russian UI translations are `Библиотека историй`, `Лаборатория кодов`, `Визуальная галерея`, `Обсерватория внимания`, and `Центр миссий`. Never use them instead of exercise IDs in data or analytics.
 - Maximus is a human boy and mentor, never a panda. Preserve his official face, dark hair, large brown eyes, blue academic cap, and blue/yellow clothing.
 - Mindy is the textbook panda with a soft swept white fringe, magenta bow, warm brown eyes, and familiar panda face. Keep her recognizable and use an academic preppy wardrobe rather than preschool or sportswear styling.
-- Keep Mindy on trainer settings screens. Use Maximus only for the AMAtraining question and post-task fact screens.
-- Keep the `v0.1.0` campus composition: full map, venue flags on buildings, large icon-free trainer buttons in nearby negative space, and the AMAtraining dock on the foreground lawn. Do not replace the map with a card grid or add instructions to it.
-- Use the unified campus palette: blue, violet, magenta, white and restrained yellow on buildings; keep sky and landscaping softer than the architecture.
+- Keep Mindy on trainer settings screens and as the welcoming guide on the campus. Use Maximus only for the AMAtraining question and post-task fact screens.
+- Keep the campus as a scroll-free `100vh` app view with all five `v0.4.0` buildings visible. Do not restore a white marketing header or add instructions to the campus.
+- Campus trainer controls use compact dark-plum floating pills with an icon, bold trainer name, and secondary venue name. Keep them separate from the artwork and do not cover the buildings. AMAtraining remains a centered bottom dock.
+- Use the unified campus palette: blue, violet, magenta, white and restrained yellow on buildings; keep sky and landscaping softer than the architecture. Landscaping is sparse sage green without bright flower clutter.
 - Preserve the task structure and input method when refreshing visuals. Do not add repeated instructions inside the display phase.
 
 ## Before finishing a change
