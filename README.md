@@ -48,13 +48,13 @@ Workflow находится в [`.github/workflows/deploy-pages.yml`](.github/wo
 Текущие адреса:
 
 - Последняя версия: [GitHub Pages](https://annaadragun.github.io/memorika-smartland-prototype/)
-- `v0.1.0`: [versioned preview](https://annaadragun.github.io/memorika-smartland-prototype/versions/v0.1.0/)
+- `v0.7.0`: [versioned preview](https://annaadragun.github.io/memorika-smartland-prototype/versions/v0.7.0/)
 
 Пример выпуска следующего этапа:
 
 ```sh
-git tag -a v0.2.0 -m "Campus and navigation update"
-git push origin v0.2.0
+git tag -a v0.8.0 -m "Next design milestone"
+git push origin v0.8.0
 ```
 
 Workflow создания выпусков находится в [`.github/workflows/release.yml`](.github/workflows/release.yml).
