@@ -2,6 +2,7 @@ export const translations = {
   ru: {
     courseProgress: "курс пройден",
     campusTitle: "Кампус памяти",
+    academyName: "Академия Амакидс",
     words: "Слова",
     numbers: "Числа",
     pictures: "Картинки",
@@ -68,6 +69,7 @@ export const translations = {
   en: {
     courseProgress: "course complete",
     campusTitle: "Memory Campus",
+    academyName: "Smartland Academy",
     words: "Words",
     numbers: "Numbers",
     pictures: "Pictures",

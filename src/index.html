@@ -13,7 +13,7 @@
       <header class="topbar">
         <button class="brand" type="button" data-action="home" aria-label="Smartland Campus — главная">
           <img class="amakids-logo" src="assets/images/amakids-logo-banner.png" alt="AMAkids" />
-          <span class="memorica-badge">MEMORICA</span>
+          <span class="memorika-badge">MEMORIKA</span>
         </button>
 
         <div class="topbar-tools">
@@ -36,7 +36,19 @@
             <div class="campus-scene">
               <img class="campus-map-image" src="assets/images/smartland-campus-v3.png" alt="Кампус Smartland с пятью учебными локациями" />
               <div class="campus-map-tone" aria-hidden="true"></div>
-              <div class="academy-building-sign" aria-hidden="true"><span>Smartland Academy</span></div>
+              <div class="academy-building-sign" aria-hidden="true">
+                <svg viewBox="0 0 340 112" role="presentation">
+                  <defs>
+                    <path id="academy-name-arc" d="M28 79 Q170 18 312 79" />
+                    <filter id="academy-letter-glow" x="-30%" y="-60%" width="160%" height="220%">
+                      <feGaussianBlur stdDeviation="3.2" result="glow" />
+                      <feMerge><feMergeNode in="glow" /><feMergeNode in="SourceGraphic" /></feMerge>
+                    </filter>
+                  </defs>
+                  <path class="academy-sign-arc" d="M34 87 Q170 34 306 87" />
+                  <text filter="url(#academy-letter-glow)"><textPath href="#academy-name-arc" startOffset="50%" text-anchor="middle" data-i18n="academyName">Академия Амакидс</textPath></text>
+                </svg>
+              </div>
 
               <button class="trainer-button trainer-grids" type="button" data-zone="grids">
                 <span class="trainer-icon trainer-icon--grids" aria-hidden="true"><svg viewBox="0 0 36 36"><rect x="5" y="5" width="7" height="7" rx="1.5"/><rect x="14.5" y="5" width="7" height="7" rx="1.5"/><rect x="24" y="5" width="7" height="7" rx="1.5"/><rect x="5" y="14.5" width="7" height="7" rx="1.5"/><rect x="14.5" y="14.5" width="7" height="7" rx="1.5"/><rect x="24" y="14.5" width="7" height="7" rx="1.5"/><rect x="5" y="24" width="7" height="7" rx="1.5"/><rect x="14.5" y="24" width="7" height="7" rx="1.5"/><rect x="24" y="24" width="7" height="7" rx="1.5"/></svg></span>

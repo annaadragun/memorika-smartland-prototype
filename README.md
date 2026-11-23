@@ -2,7 +2,7 @@
 
 Кликабельный адаптивный RU/EN-прототип оболочки курса Memorika. Проект показывает два основных пользовательских сценария: свободную тренировку и назначенную преподавателем `AMAtraining`.
 
-Главный экран — приложение без маркетинговой шапки и вертикальной прокрутки. Композиция пяти зданий дополнена единой белой системной шапкой с оригинальным логотипом AMAkids, четырьмя симметричными стеклянными карточками `иконка + тренажёр + локация`, архитектурной вывеской Smartland Academy, приветствующей Минди и светлым dock AMAtraining. Актуальные ассеты — `src/assets/images/smartland-campus-v3.png`, `src/assets/images/mindy-welcome-v2.png` и `src/assets/images/amakids-logo-banner.png`.
+Главный экран — приложение без маркетинговой шапки и вертикальной прокрутки. Композиция пяти зданий дополнена единой белой системной шапкой с оригинальным логотипом AMAkids и названием `MEMORIKA`, четырьмя симметричными прозрачными карточками `иконка + тренажёр + локация`, локализованной световой надписью академии по дуге, приветствующей Минди и светлым dock AMAtraining. Актуальные ассеты — `src/assets/images/smartland-campus-v3.png`, `src/assets/images/mindy-welcome-v2.png` и `src/assets/images/amakids-logo-banner.png`.
 
 [![Deploy prototype to GitHub Pages](https://github.com/annaadragun/memorika-smartland-prototype/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/annaadragun/memorika-smartland-prototype/actions/workflows/deploy-pages.yml)
 
@@ -48,13 +48,13 @@ Workflow находится в [`.github/workflows/deploy-pages.yml`](.github/wo
 Текущие адреса:
 
 - Последняя версия: [GitHub Pages](https://annaadragun.github.io/memorika-smartland-prototype/)
-- `v0.7.0`: [versioned preview](https://annaadragun.github.io/memorika-smartland-prototype/versions/v0.7.0/)
+- `v0.8.0`: [versioned preview](https://annaadragun.github.io/memorika-smartland-prototype/versions/v0.8.0/)
 
 Пример выпуска следующего этапа:
 
 ```sh
-git tag -a v0.8.0 -m "Next design milestone"
-git push origin v0.8.0
+git tag -a v0.9.0 -m "Next design milestone"
+git push origin v0.9.0
 ```
 
 Workflow создания выпусков находится в [`.github/workflows/release.yml`](.github/workflows/release.yml).

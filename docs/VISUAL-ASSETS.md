@@ -12,7 +12,7 @@ The map was produced with the built-in image-generation tool in a composition-pr
 
 ## Brand mark
 
-`src/assets/images/amakids-logo-banner.png` is the supplied transparent AMAkids logo used in the shared white header. The adjacent `MEMORICA` course badge remains live HTML text, so the product label stays sharp and editable.
+`src/assets/images/amakids-logo-banner.png` is the supplied transparent AMAkids logo used in the shared white header. The adjacent `MEMORIKA` course badge remains live HTML text, so the product label stays sharp and editable.
 
 ## Campus interface layers
 
