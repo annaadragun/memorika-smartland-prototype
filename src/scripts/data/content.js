@@ -6,11 +6,11 @@ export const translations = {
     numbers: "Числа",
     pictures: "Картинки",
     grids: "Таблицы",
-    visualGallery: "Visual Gallery",
-    codeLab: "Code Lab",
-    storyLibrary: "Story Library",
-    focusObservatory: "Focus Observatory",
-    missionCenter: "Mission Center",
+    visualGallery: "Визуальная галерея",
+    codeLab: "Лаборатория кодов",
+    storyLibrary: "Библиотека историй",
+    focusObservatory: "Обсерватория внимания",
+    missionCenter: "Центр миссий",
     open: "Открыть",
     homeworkLabel: "Домашняя тренировка",
     amaSummary: "Задание от преподавателя · этап 2 из 5",
@@ -69,7 +69,7 @@ export const translations = {
     campusTitle: "Memory Campus",
     words: "Words",
     numbers: "Numbers",
-    pictures: "Images",
+    pictures: "Pictures",
     grids: "Grids",
     visualGallery: "Visual Gallery",
     codeLab: "Code Lab",
@@ -148,28 +148,28 @@ const gridPatterns = [
 
 export const zones = {
   words: {
-    venue:{ru:"Story Library",en:"Story Library"},
+    venue:{ru:"Библиотека историй",en:"Story Library"},
     title:{ru:"Слова",en:"Words"},
     instruction:{ru:"Я буду показывать слова по одному. Запомни все элементы и воспроизведи их по порядку.",en:"I’ll show the words one at a time. Remember every item and reproduce them in the same order."},
     colors:{base:"#168b83",dark:"#0d5c58"},
     items:{ru:["Маяк","Арбуз","Ракета","Скрипка","Облако","Компас","Кит","Фонарь","Ключ","Мост","Корона","Лимон"],en:["Lighthouse","Watermelon","Rocket","Violin","Cloud","Compass","Whale","Lantern","Key","Bridge","Crown","Lemon"]}
   },
   numbers: {
-    venue:{ru:"Code Lab",en:"Code Lab"},
+    venue:{ru:"Лаборатория кодов",en:"Code Lab"},
     title:{ru:"Числа",en:"Numbers"},
     instruction:{ru:"Я буду показывать числа по одному. Запомни все элементы и воспроизведи их по порядку.",en:"I’ll show the numbers one at a time. Remember every item and reproduce them in the same order."},
     colors:{base:"#d98410",dark:"#8b5105"},
     items:{ru:["27","418","63","905","142","56","731","84","309","12","647","93"],en:["27","418","63","905","142","56","731","84","309","12","647","93"]}
   },
   pictures: {
-    venue:{ru:"Visual Gallery",en:"Visual Gallery"},
-    title:{ru:"Картинки",en:"Images"},
+    venue:{ru:"Визуальная галерея",en:"Visual Gallery"},
+    title:{ru:"Картинки",en:"Pictures"},
     instruction:{ru:"Я буду показывать картинки по одной. Запомни все элементы и воспроизведи их по порядку.",en:"I’ll show the images one at a time. Remember every item and reproduce them in the same order."},
     colors:{base:"#cc3c78",dark:"#85234d"},
     items:{ru:["🚲","🦒","🎈","🏝️","🎨","🐙","🧩","🚀","🎸","🍉","🛶","🔑"],en:["🚲","🦒","🎈","🏝️","🎨","🐙","🧩","🚀","🎸","🍉","🛶","🔑"]}
   },
   grids: {
-    venue:{ru:"Focus Observatory",en:"Focus Observatory"},
+    venue:{ru:"Обсерватория внимания",en:"Focus Observatory"},
     title:{ru:"Таблицы",en:"Grids"},
     instruction:{ru:"Запомни расположение, форму и цвет элементов в таблице, а затем восстанови их.",en:"Remember the position, shape, and color of the items in each grid, then reconstruct them."},
     colors:{base:"#6649b5",dark:"#3f2b7e"},

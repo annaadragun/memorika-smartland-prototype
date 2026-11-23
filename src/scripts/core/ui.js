@@ -9,7 +9,7 @@ export function showScreen(name, focus = true) {
   $$(".screen").forEach((screen) => {
     screen.classList.toggle("is-active", screen.dataset.screen === name);
   });
-  const publicZone = state.zone === "pictures" ? "images" : state.zone;
+  const publicZone = state.zone;
   const routes = {
     campus: "#campus",
     settings: `#settings/${publicZone}`,

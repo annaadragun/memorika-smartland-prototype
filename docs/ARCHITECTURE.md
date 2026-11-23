@@ -39,9 +39,9 @@ Replace the following prototype data with platform services:
 - teacher comments and progress reporting;
 - localization delivery.
 
-The canonical exercise IDs are `words`, `numbers`, `pictures`, and `grids`. Their current public English labels are `Words`, `Numbers`, `Images`, and `Grids`. Venue signs are fixed presentation copy: `Story Library`, `Code Lab`, `Visual Gallery`, `Focus Observatory`, and `Mission Center`; they must never replace exercise IDs in data contracts or analytics.
+The canonical exercise IDs are `words`, `numbers`, `pictures`, and `grids`. Their public English labels are `Words`, `Numbers`, `Pictures`, and `Grids`. Venue signs are fixed presentation copy: `Story Library`, `Code Lab`, `Visual Gallery`, `Focus Observatory`, and `Mission Center`; they must never replace exercise IDs in data contracts or analytics. Russian venue translations live in the localization layer.
 
-The campus is a single responsive 16:9 map. Transparent building-sized buttons provide the hit areas, while the venue sign and trainer label remain separate visual layers. URL hashes expose safe prototype screens directly for design review.
+The campus is a single responsive 16:9 map based on the `v0.1.0` composition. Venue names appear as flags attached to buildings; larger icon-free trainer buttons occupy nearby negative space, and the AMAtraining dock sits on the foreground lawn. URL hashes expose safe prototype screens directly for design review.
 
 Free-training settings are stored per exercise type in browser `localStorage` for prototype continuity. Production persistence should be defined by the learner/settings service. `Grids` uses a dedicated shape/color/position view model rather than treating a grid as a text sequence.
 

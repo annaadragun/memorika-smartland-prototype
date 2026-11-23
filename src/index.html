@@ -12,8 +12,13 @@
     <div class="app-shell">
       <header class="topbar">
         <button class="brand" type="button" data-action="home" aria-label="Smartland Campus — главная">
-          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
-          <span><strong>Smartland</strong><small>CAMPUS · MEMORIKA</small></span>
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" role="presentation">
+              <path class="brand-diamond" d="M32 3C35 3 37 4 40 7L57 24C61 28 61 36 57 40L40 57C36 61 28 61 24 57L7 40C3 36 3 28 7 24L24 7C27 4 29 3 32 3Z" />
+              <path class="brand-a" d="M20 43 28.5 21c1.2-3.2 5.8-3.2 7 0L44 43M25 35h14" />
+            </svg>
+          </span>
+          <span><strong>Smartland</strong><small>ACADEMY · MEMORIKA</small></span>
         </button>
 
         <div class="topbar-tools">
@@ -32,32 +37,24 @@
         <section class="screen campus-screen is-active" data-screen="campus" aria-labelledby="campus-title">
           <h1 class="sr-only" id="campus-title" data-i18n="campusTitle">Кампус памяти</h1>
           <div class="campus-map" aria-label="Карта Smartland Campus">
-            <img class="campus-map-image" src="assets/images/smartland-campus.png" alt="Кампус Smartland с пятью учебными локациями" />
+            <img class="campus-map-image" src="assets/images/smartland-campus-v2.png" alt="Кампус Smartland с пятью учебными локациями" />
             <div class="campus-map-tone" aria-hidden="true"></div>
 
-            <button class="campus-location location-gallery" type="button" data-zone="pictures">
-              <span class="location-sign" data-i18n="visualGallery">Visual Gallery</span>
-              <span class="trainer-label" data-i18n="pictures">Картинки</span>
-            </button>
+            <span class="venue-flag flag-gallery" data-i18n="visualGallery">Визуальная галерея</span>
+            <span class="venue-flag flag-observatory" data-i18n="focusObservatory">Обсерватория внимания</span>
+            <span class="venue-flag flag-code" data-i18n="codeLab">Лаборатория кодов</span>
+            <span class="venue-flag flag-library" data-i18n="storyLibrary">Библиотека историй</span>
+            <span class="venue-flag flag-mission" data-i18n="missionCenter">Центр миссий</span>
 
-            <button class="campus-location location-observatory" type="button" data-zone="grids">
-              <span class="location-sign" data-i18n="focusObservatory">Focus Observatory</span>
-              <span class="trainer-label" data-i18n="grids">Таблицы</span>
-            </button>
+            <button class="trainer-button trainer-pictures" type="button" data-zone="pictures"><strong data-i18n="pictures">Картинки</strong></button>
+            <button class="trainer-button trainer-grids" type="button" data-zone="grids"><strong data-i18n="grids">Таблицы</strong></button>
+            <button class="trainer-button trainer-numbers" type="button" data-zone="numbers"><strong data-i18n="numbers">Числа</strong></button>
+            <button class="trainer-button trainer-words" type="button" data-zone="words"><strong data-i18n="words">Слова</strong></button>
 
-            <button class="campus-location location-code" type="button" data-zone="numbers">
-              <span class="location-sign" data-i18n="codeLab">Code Lab</span>
-              <span class="trainer-label" data-i18n="numbers">Числа</span>
-            </button>
-
-            <button class="campus-location location-library" type="button" data-zone="words">
-              <span class="location-sign" data-i18n="storyLibrary">Story Library</span>
-              <span class="trainer-label" data-i18n="words">Слова</span>
-            </button>
-
-            <button class="campus-location location-mission" type="button" data-action="homework">
-              <span class="location-sign" data-i18n="missionCenter">Mission Center</span>
-              <span class="trainer-label">AMAtraining</span>
+            <button class="homework-dock" type="button" data-action="homework">
+              <span><small data-i18n="homeworkLabel">Домашняя тренировка</small><strong>AMAtraining</strong></span>
+              <span class="dock-progress"><b><i style="width:40%"></i></b><small>2 / 5</small></span>
+              <span class="dock-button" data-i18n="continue">Продолжить</span>
             </button>
           </div>
         </section>
@@ -72,6 +69,7 @@
               <span class="zone-kicker" id="zone-kicker">Студия историй</span>
               <h2 id="settings-title"><span id="zone-title">Слова</span></h2>
               <p id="zone-instruction">Я буду показывать слова по одному. Запомни все элементы и воспроизведи их по порядку.</p>
+              <div class="trainer-motif" id="trainer-motif" aria-hidden="true"></div>
               <div class="character character-mindy" role="img" aria-label="Минди — помощница ученика"><img src="assets/images/mindy-maximus-v4.png" alt="" /></div>
             </div>
 
@@ -154,7 +152,7 @@
         <section class="screen mission-screen" data-screen="mission" aria-labelledby="mission-title">
           <div class="screen-toolbar"><button class="back-button" type="button" data-action="homework"><span>AMAtraining</span></button><span class="step-label"><span data-i18n="stage">Этап</span> 2 / 5</span></div>
           <div class="mission-layout">
-            <div class="mystery-panel"><span class="eyebrow" data-i18n="questionLabel">Вопрос от Максимуса</span><h2 id="mission-title" data-i18n="missionQuestion">Почему необычные образы запоминаются легче?</h2><p data-i18n="missionQuestionHint">Выполни задание — после него Максимус откроет ответ.</p><div class="character character-maximus" role="img" aria-label="Максимус задаёт вопрос"><img src="assets/images/mindy-maximus-v4.png" alt="" /></div></div>
+            <div class="mystery-panel"><div class="mystery-copy"><span class="eyebrow" data-i18n="questionLabel">Вопрос от Максимуса</span><h2 id="mission-title" data-i18n="missionQuestion">Почему необычные образы запоминаются легче?</h2><p data-i18n="missionQuestionHint">Выполни задание — после него Максимус откроет ответ.</p></div><div class="character character-maximus" role="img" aria-label="Максимус задаёт вопрос"><img src="assets/images/mindy-maximus-v4.png" alt="" /></div></div>
             <div class="mission-brief"><span class="brief-label" data-i18n="teacherSet">Задано преподавателем</span><h3 data-i18n="words">Слова</h3><dl><div><dt data-i18n="difficulty">Уровень</dt><dd>5 / 10</dd></div><div><dt data-i18n="displayTime">Время показа</dt><dd>2,0 <span data-i18n="secondsShort">сек</span></dd></div><div><dt data-i18n="items">Количество элементов</dt><dd>5</dd></div></dl><button class="primary-button" type="button" data-action="start-mission" data-i18n="startMission">Начать</button><small class="brief-footnote" data-i18n="missionFootnote">Параметры AMAtraining фиксированы преподавателем.</small></div>
           </div>
         </section>

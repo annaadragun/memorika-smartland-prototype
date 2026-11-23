@@ -2,6 +2,8 @@
 
 Кликабельный адаптивный RU/EN-прототип оболочки курса Memorika. Проект показывает два основных пользовательских сценария: свободную тренировку и назначенную преподавателем `AMAtraining`.
 
+Главная навигация возвращена к композиции `v0.1.0`: единая карта кампуса, локализованные флаги локаций, крупные кнопки тренажёров без иконок и отдельная плашка AMAtraining на лужайке. Актуальная иллюстрация карты — `src/assets/images/smartland-campus-v2.png`.
+
 [![Deploy prototype to GitHub Pages](https://github.com/annaadragun/memorika-smartland-prototype/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/annaadragun/memorika-smartland-prototype/actions/workflows/deploy-pages.yml)
 
 Публичная версия: [annaadragun.github.io/memorika-smartland-prototype](https://annaadragun.github.io/memorika-smartland-prototype/)
@@ -65,7 +67,7 @@ Workflow создания выпусков находится в [`.github/workf
 ├── Свободная тренировка
 │   ├── Words / Слова
 │   ├── Numbers / Числа
-│   ├── Images / Картинки
+│   ├── Pictures / Картинки
 │   ├── Grids / Таблицы
 │   └── Настройки → показ → последовательный ответ → результат
 └── AMAtraining
@@ -75,7 +77,7 @@ Workflow создания выпусков находится в [`.github/workf
 Прямые ссылки для просмотра экранов прототипа:
 
 - `#campus` — карта кампуса;
-- `#settings/words`, `#settings/numbers`, `#settings/images`, `#settings/grids` — настройки тренажёров;
+- `#settings/words`, `#settings/numbers`, `#settings/pictures`, `#settings/grids` — настройки тренажёров;
 - `#amatraining` — маршрут домашней тренировки;
 - `#amatraining/question` — вопрос Максимуса перед заданием;
 - `#amatraining/fact` — ответ и интересный факт после задания.
@@ -84,6 +86,7 @@ Workflow создания выпусков находится в [`.github/workf
 
 - [Архитектура](docs/ARCHITECTURE.md)
 - [Передача разработчикам](docs/DEVELOPER-HANDOFF.md)
+- [Визуальные ассеты](docs/VISUAL-ASSETS.md)
 
 ## Важно
 

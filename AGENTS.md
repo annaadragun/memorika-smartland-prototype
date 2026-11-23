@@ -17,13 +17,14 @@
 
 ## Memorika product constraints
 
-- Use the canonical exercise IDs `words`, `numbers`, `pictures`, and `grids`. Their current English UI labels are `Words`, `Numbers`, `Images`, and `Grids`; Russian labels are `Слова`, `Числа`, `Картинки`, and `Таблицы`.
+- Use the canonical exercise IDs `words`, `numbers`, `pictures`, and `grids`. Their English UI labels are `Words`, `Numbers`, `Pictures`, and `Grids`; Russian labels are `Слова`, `Числа`, `Картинки`, and `Таблицы`.
 - Use `AMAtraining` as the product name for the teacher-assigned homework flow in both languages.
-- Venue names are fixed secondary signs: `Story Library`, `Code Lab`, `Visual Gallery`, `Focus Observatory`, and `Mission Center`. Never use them instead of exercise IDs in data or analytics.
+- Venue names are fixed secondary signs: `Story Library`, `Code Lab`, `Visual Gallery`, `Focus Observatory`, and `Mission Center`. Russian UI translations are `Библиотека историй`, `Лаборатория кодов`, `Визуальная галерея`, `Обсерватория внимания`, and `Центр миссий`. Never use them instead of exercise IDs in data or analytics.
 - Maximus is a human boy and mentor, never a panda. Preserve his official face, dark hair, large brown eyes, blue academic cap, and blue/yellow clothing.
 - Mindy is the textbook panda with a soft swept white fringe, magenta bow, warm brown eyes, and familiar panda face. Keep her recognizable and use an academic preppy wardrobe rather than preschool or sportswear styling.
 - Keep Mindy on trainer settings screens. Use Maximus only for the AMAtraining question and post-task fact screens.
-- Keep the full campus map visible on its main screen. Trainer hit areas belong directly to their buildings; do not replace the map with a card grid or add instructions to it.
+- Keep the `v0.1.0` campus composition: full map, venue flags on buildings, large icon-free trainer buttons in nearby negative space, and the AMAtraining dock on the foreground lawn. Do not replace the map with a card grid or add instructions to it.
+- Use the unified campus palette: blue, violet, magenta, white and restrained yellow on buildings; keep sky and landscaping softer than the architecture.
 - Preserve the task structure and input method when refreshing visuals. Do not add repeated instructions inside the display phase.
 
 ## Before finishing a change

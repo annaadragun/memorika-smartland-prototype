@@ -26,6 +26,22 @@ function renderGrid(pattern, compact = false) {
   return `<span class="memory-grid${compact ? " is-compact" : ""}" aria-label="Grid pattern">${cells}</span>`;
 }
 
+function renderTrainerMotif() {
+  const motif = $("#trainer-motif");
+  const items = zones[state.zone].items[state.lang];
+  if (state.zone === "grids") {
+    motif.innerHTML = items.slice(0, 3).map((item) => `<span class="motif-card">${renderGrid(item, true)}</span>`).join("");
+    return;
+  }
+
+  const className = state.zone === "pictures"
+    ? "motif-card motif-picture"
+    : state.zone === "numbers"
+      ? "motif-card motif-number"
+      : "motif-card motif-word";
+  motif.innerHTML = items.slice(0, 3).map((item) => `<span class="${className}">${item}</span>`).join("");
+}
+
 function renderPracticeItem(item) {
   const content = $("#practice-content");
   if (state.zone === "grids") {
@@ -51,6 +67,7 @@ function updateZoneCopy() {
   $("#zone-instruction").textContent = zone.instruction[state.lang];
   $("#guide-card").style.setProperty("--zone", zone.colors.base);
   $("#guide-card").style.setProperty("--zone-dark", zone.colors.dark);
+  renderTrainerMotif();
 }
 
 function setLanguage(lang) {
