@@ -9,7 +9,7 @@ export const translations = {
     visualGallery: "Визуальная галерея",
     codeLab: "Лаборатория кодов",
     storyLibrary: "Библиотека историй",
-    focusObservatory: "Обсерватория внимания",
+    focusObservatory: "Обсерватория фокуса",
     missionCenter: "Центр миссий",
     open: "Открыть",
     homeworkLabel: "Домашняя тренировка",
@@ -171,7 +171,7 @@ export const zones = {
     items:{ru:["🚲","🦒","🎈","🏝️","🎨","🐙","🧩","🚀","🎸","🍉","🛶","🔑"],en:["🚲","🦒","🎈","🏝️","🎨","🐙","🧩","🚀","🎸","🍉","🛶","🔑"]}
   },
   grids: {
-    venue:{ru:"Обсерватория внимания",en:"Focus Observatory"},
+    venue:{ru:"Обсерватория фокуса",en:"Focus Observatory"},
     title:{ru:"Таблицы",en:"Grids"},
     instruction:{ru:"Запомни расположение, форму и цвет элементов в таблице, а затем восстанови их.",en:"Remember the position, shape, and color of the items in each grid, then reconstruct them."},
     colors:{base:"#6649b5",dark:"#3f2b7e"},

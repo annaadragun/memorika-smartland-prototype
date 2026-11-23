@@ -2,7 +2,7 @@
 
 Кликабельный адаптивный RU/EN-прототип оболочки курса Memorika. Проект показывает два основных пользовательских сценария: свободную тренировку и назначенную преподавателем `AMAtraining`.
 
-Главный экран — полноэкранное приложение без маркетинговой шапки и вертикальной прокрутки. Композиция пяти зданий из `v0.4.0` дополнена компактными карточками `иконка + тренажёр + локация`, приветствующей Минди и отдельным dock AMAtraining. Актуальные ассеты — `src/assets/images/smartland-campus-v3.png` и `src/assets/images/mindy-welcome-v1.png`.
+Главный экран — приложение без маркетинговой шапки и вертикальной прокрутки. Композиция пяти зданий дополнена единой белой системной шапкой, светлыми карточками `иконка + тренажёр + локация`, приветствующей Минди и светлым dock AMAtraining. Актуальные ассеты — `src/assets/images/smartland-campus-v3.png` и `src/assets/images/mindy-welcome-v2.png`.
 
 [![Deploy prototype to GitHub Pages](https://github.com/annaadragun/memorika-smartland-prototype/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/annaadragun/memorika-smartland-prototype/actions/workflows/deploy-pages.yml)
 

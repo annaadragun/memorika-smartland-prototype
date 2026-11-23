@@ -8,7 +8,7 @@ The map was produced with the built-in image-generation tool in a composition-pr
 
 ## Campus Mindy
 
-`src/assets/images/mindy-welcome-v1.png` is a transparent, full-body campus cutout. It preserves Mindy's approved preppy design while changing the crossed-arm pose to a welcoming presentation gesture. The campus character remains independent from the background so placement and scale can respond to the viewport.
+`src/assets/images/mindy-welcome-v2.png` is the current transparent, full-body campus cutout. It preserves Mindy's approved face, hairstyle and welcoming gesture while moving her into a brighter uniform: white collared shirt, magenta knitted vest and deep navy pleated skirt. The campus character remains independent from the background so placement and scale can respond to the viewport.
 
 ## Brand mark
 

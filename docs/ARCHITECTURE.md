@@ -41,7 +41,7 @@ Replace the following prototype data with platform services:
 
 The canonical exercise IDs are `words`, `numbers`, `pictures`, and `grids`. Their public English labels are `Words`, `Numbers`, `Pictures`, and `Grids`. Venue signs are fixed presentation copy: `Story Library`, `Code Lab`, `Visual Gallery`, `Focus Observatory`, and `Mission Center`; they must never replace exercise IDs in data contracts or analytics. Russian venue translations live in the localization layer.
 
-The campus is a scroll-free `100vh` application surface. A centered 16:9 scene preserves all five buildings while a softened cover layer fills non-16:9 viewports. Accessible HTML overlays provide the Smartland/Back HUD, four icon-title-venue trainer pills, Mindy, and the bottom AMAtraining dock; no navigation text or controls are baked into the campus bitmap. URL hashes expose safe prototype screens directly for design review.
+The campus is a scroll-free application surface below the shared compact system header. A centered 16:9 scene preserves all five buildings while a softened cover layer fills non-16:9 viewports. Accessible HTML overlays provide four white icon-title-venue trainer cards, Mindy, and the white bottom AMAtraining dock; no navigation text or controls are baked into the campus bitmap. URL hashes expose safe prototype screens directly for design review.
 
 Free-training settings are stored per exercise type in browser `localStorage` for prototype continuity. Production persistence should be defined by the learner/settings service. `Grids` uses a dedicated shape/color/position view model rather than treating a grid as a text sequence.
 
