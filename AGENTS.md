@@ -21,7 +21,7 @@
 - Use `AMAtraining` as the product name for the teacher-assigned homework flow in both languages.
 - Venue names are secondary decorative signs only; never use them instead of canonical exercise names in data or analytics.
 - Maximus is a human boy and mentor, never a panda. Preserve his official face, dark hair, large brown eyes, blue academic cap, and blue/yellow clothing.
-- Mindy is the textbook panda with a white hair tuft, magenta bow, and magenta dress. Keep both characters recognizable when adapting their rendering style.
+- Mindy is the textbook panda with a soft swept white fringe, magenta bow, warm brown eyes, and familiar panda face. Keep her recognizable and use an academic preppy wardrobe rather than preschool or sportswear styling.
 - Preserve the task structure and input method when refreshing visuals. Do not add repeated instructions inside the display phase.
 
 ## Before finishing a change

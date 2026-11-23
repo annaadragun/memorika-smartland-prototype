@@ -23,7 +23,7 @@
 ## Character constraints
 
 - Maximus is a human boy and an intelligent teacher/mentor. Preserve his large brown eyes, dark hair, blue academic cap and blue/yellow clothing.
-- Mindy is the panda from the Memorika textbook. Preserve her white hair tuft, magenta bow and magenta dress.
+- Mindy is the panda from the Memorika textbook. Preserve her familiar panda face, warm brown eyes, magenta bow and soft swept white fringe. Her current academic preppy outfit replaces the preschool-style dress: knitted raglan sweater, white shirt collar, structured skirt and discreet AMAKids diamond patch.
 - Both characters may be rendered in one polished visual style, but neither identity may be replaced or radically redesigned.
 - The current combined PNG is a prototype asset; production illustration should be approved against the official source artwork.
 
