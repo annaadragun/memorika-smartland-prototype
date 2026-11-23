@@ -24,7 +24,8 @@
 - Mindy is the textbook panda with a soft swept white fringe, magenta bow, warm brown eyes, and familiar panda face. Keep her recognizable and use an academic preppy wardrobe rather than preschool or sportswear styling.
 - Keep Mindy on trainer settings screens and as the welcoming guide on the campus. Use Maximus only for the AMAtraining question and post-task fact screens.
 - Keep the campus as a scroll-free app view with all five buildings visible below the compact white system header shared with the settings screen. Do not add a separate marketing header or instructions to the campus.
-- Campus trainer controls use clean white floating cards with a vivid icon tile, bold trainer name, and secondary venue name. Keep them separate from the artwork and do not cover the buildings. AMAtraining remains a centered white bottom dock with a blue action button.
+- Campus trainer controls use four large, symmetrical glassmorphism cards with a vivid icon tile and an opaque light text backing for the bold trainer name and secondary venue name. Keep the central entrance visible and align the left/right card pairs. AMAtraining remains a centered white bottom dock with a blue action button.
+- Use the supplied transparent AMAkids logo asset in the shared white header and pair it with the `MEMORICA` course badge. Keep the `Smartland Academy` sign as an HTML overlay on the central building so it remains editable.
 - Use the unified campus palette: blue, violet, magenta, white and restrained yellow on buildings; keep sky and landscaping softer than the architecture. Landscaping is sparse sage green without bright flower clutter.
 - Preserve the task structure and input method when refreshing visuals. Do not add repeated instructions inside the display phase.
 

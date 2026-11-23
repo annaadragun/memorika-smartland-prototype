@@ -12,7 +12,11 @@ The map was produced with the built-in image-generation tool in a composition-pr
 
 ## Brand mark
 
-The Smartland header mark is an inline SVG inspired by the AMAKids magenta diamond and the embroidered patch on Mindy's uniform. It is code-native so it remains sharp, themeable and accessible at every screen density.
+`src/assets/images/amakids-logo-banner.png` is the supplied transparent AMAkids logo used in the shared white header. The adjacent `MEMORICA` course badge remains live HTML text, so the product label stays sharp and editable.
+
+## Campus interface layers
+
+Trainer navigation, the `Smartland Academy` architectural sign, Mindy's rim light and the AMAtraining dock are HTML/CSS overlays. They remain independent of the campus bitmap, can be localized, and can be replaced by production components without redrawing the environment.
 
 ## Screen backgrounds
 
