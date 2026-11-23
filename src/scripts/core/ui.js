@@ -9,6 +9,17 @@ export function showScreen(name, focus = true) {
   $$(".screen").forEach((screen) => {
     screen.classList.toggle("is-active", screen.dataset.screen === name);
   });
+  const publicZone = state.zone === "pictures" ? "images" : state.zone;
+  const routes = {
+    campus: "#campus",
+    settings: `#settings/${publicZone}`,
+    homework: "#amatraining",
+    mission: "#amatraining/question",
+    discovery: "#amatraining/fact",
+    practice: "#practice",
+    result: "#result"
+  };
+  if (routes[name]) history.replaceState(null, "", routes[name]);
   window.scrollTo({ top: 0, behavior: "smooth" });
   if (focus) $("#app").focus({ preventScroll: true });
 }

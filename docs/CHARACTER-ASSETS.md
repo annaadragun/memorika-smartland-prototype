@@ -2,7 +2,7 @@
 
 ## Runtime asset
 
-`src/assets/images/mindy-maximus-v4.png` is the transparent prototype cutout used across the campus, settings and AMAtraining screens. The previous `v2` asset remains as a comparison source but is no longer referenced at runtime.
+`src/assets/images/mindy-maximus-v4.png` is the transparent prototype cutout used to isolate Mindy on settings screens and Maximus on the AMAtraining question/fact screens. Characters are intentionally absent from the campus map and AMAtraining route overview. The previous `v2` asset remains as a comparison source but is no longer referenced at runtime.
 
 ## Identity references
 

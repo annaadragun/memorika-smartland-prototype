@@ -299,7 +299,29 @@ function bindEvents() {
   });
 }
 
+function openInitialRoute() {
+  const route = window.location.hash.replace(/^#\/?/, "");
+  if (route.startsWith("settings/")) {
+    const requestedZone = route.split("/")[1];
+    const zone = requestedZone === "images" ? "pictures" : requestedZone;
+    if (zones[zone]) {
+      openSettings(zone);
+      return;
+    }
+  }
+
+  const screenRoutes = {
+    campus: "campus",
+    amatraining: "homework",
+    "amatraining/question": "mission",
+    "amatraining/fact": "discovery"
+  };
+  showScreen(screenRoutes[route] || "campus", false);
+}
+
 restoreSettings();
 bindEvents();
 loadZoneSettings();
 setLanguage("ru");
+openInitialRoute();
+window.addEventListener("hashchange", openInitialRoute);

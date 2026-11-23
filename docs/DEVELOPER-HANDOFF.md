@@ -4,7 +4,7 @@
 
 - responsive information architecture for desktop, tablet and mobile;
 - Russian and English UI terminology;
-- stable exercise terminology: `Words`, `Numbers`, `Pictures`, `Grids`;
+- stable exercise IDs with current labels: `Words`, `Numbers`, `Images`, `Grids`;
 - separation between free training and assigned `AMAtraining`;
 - the complete demonstration loop: setup, item-by-item display, ordered recall with hints, result;
 - a dedicated `Grids` representation for position, shape and color;
@@ -25,6 +25,7 @@
 - Maximus is a human boy and an intelligent teacher/mentor. Preserve his large brown eyes, dark hair, blue academic cap and blue/yellow clothing.
 - Mindy is the panda from the Memorika textbook. Preserve her familiar panda face, warm brown eyes, magenta bow and soft swept white fringe. Her current academic preppy outfit replaces the preschool-style dress: knitted raglan sweater, white shirt collar, structured skirt and discreet AMAKids diamond patch.
 - Both characters may be rendered in one polished visual style, but neither identity may be replaced or radically redesigned.
+- Mindy belongs on trainer settings screens and must be shown full-body. Maximus belongs on the AMAtraining question and post-task fact screens, not on the campus or route overview.
 - The current combined PNG is a prototype asset; production illustration should be approved against the official source artwork.
 
 ## Suggested API contracts
