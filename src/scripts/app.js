@@ -7,6 +7,16 @@ function t(key) {
   return translations[state.lang][key] || key;
 }
 
+function hideMindyGreeting() {
+  $("#mindy-greeting").classList.add("is-hidden");
+}
+
+function showMindyGreeting() {
+  const greeting = $("#mindy-greeting");
+  greeting.classList.remove("is-hidden");
+  state.timers.push(setTimeout(hideMindyGreeting, 5000));
+}
+
 function itemKey(item) {
   return typeof item === "object" ? item.id : String(item).toLocaleLowerCase();
 }
@@ -284,14 +294,19 @@ function bindEvents() {
   $$('[data-action]').forEach((button) => {
     button.addEventListener("click", () => {
       const action = button.dataset.action;
-      if (action === "home") showScreen("campus");
+      if (action === "home") {
+        showScreen("campus");
+        showMindyGreeting();
+      }
       if (action === "back") {
         if (window.history.length > 1) window.history.back();
         else showToast(state.lang === "ru" ? "Возврат на платформу." : "Return to the platform.");
       }
       if (action === "language") setLanguage(state.lang === "ru" ? "en" : "ru");
       if (action === "homework") showScreen("homework");
+      if (action === "fact") showScreen("discovery");
       if (action === "mission") showScreen("mission");
+      if (action === "close-greeting") hideMindyGreeting();
       if (action === "start-mission") startPractice("homework");
       if (action === "repeat") startPractice("free");
       if (action === "leave-practice") {
@@ -337,12 +352,14 @@ function openInitialRoute() {
     "amatraining/question": "mission",
     "amatraining/fact": "discovery"
   };
-  showScreen(screenRoutes[route] || "campus", false);
+  const screen = screenRoutes[route] || "campus";
+  showScreen(screen, false);
+  if (screen === "campus") showMindyGreeting();
 }
 
 restoreSettings();
 bindEvents();
 loadZoneSettings();
-setLanguage("ru");
+setLanguage(new URLSearchParams(window.location.search).get("lang") === "en" ? "en" : "ru");
 openInitialRoute();
 window.addEventListener("hashchange", openInitialRoute);

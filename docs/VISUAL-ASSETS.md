@@ -10,13 +10,21 @@ The map was produced with the built-in image-generation tool in a composition-pr
 
 `src/assets/images/mindy-welcome-v2.png` is the current transparent, full-body campus cutout. It preserves Mindy's approved face, hairstyle and welcoming gesture while moving her into a brighter uniform: white collared shirt, magenta knitted vest and deep navy pleated skirt. The campus character remains independent from the background so placement and scale can respond to the viewport.
 
+The same cutout is reused on trainer settings screens. This keeps Mindy's face, proportions and preppy uniform consistent across the free-training flow.
+
+## AMAtraining Maximus
+
+`src/assets/images/maximus-amatraining-v1.png` is the transparent, full-body mentor cutout used on the AMAtraining route. It preserves the approved Maximus identity, academic cap, welcoming tablet pose and white shoes, while using a deeper navy-and-magenta robe that belongs to the discovery-card palette.
+
+The asset was produced with the built-in image-generation tool in identity-preserving edit mode and has no baked-in text, speech bubble or background. The existing `mindy-maximus-v4.png` remains the approved source for the dedicated question and fact screens.
+
 ## Brand mark
 
-`src/assets/images/amakids-logo-banner.png` is the supplied transparent AMAkids logo used in the shared white header. The adjacent `MEMORIKA` course badge remains live HTML text, so the product label stays sharp and editable.
+`src/assets/images/amakids-logo-banner.png` is the supplied transparent AMAkids logo used in the shared white header. The adjacent `MEMORIKA` course badge remains live HTML text, so the product label stays sharp and editable. The campus crest uses a CSS crop of the same supplied asset, ensuring that the magenta diamond is the exact brand mark rather than a redrawn approximation.
 
 ## Campus interface layers
 
-Trainer navigation, the `Smartland Academy` architectural sign, Mindy's rim light and the AMAtraining dock are HTML/CSS overlays. They remain independent of the campus bitmap, can be localized, and can be replaced by production components without redrawing the environment.
+Trainer navigation, the architectural crest, Mindy's timed localized greeting, her rim light and the AMAtraining dock are HTML/CSS overlays. They remain independent of the campus bitmap, can be localized, and can be replaced by production components without redrawing the environment.
 
 ## Screen backgrounds
 

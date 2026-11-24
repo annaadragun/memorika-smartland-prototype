@@ -2,7 +2,9 @@ export const translations = {
   ru: {
     courseProgress: "курс пройден",
     campusTitle: "Кампус памяти",
-    academyName: "Академия Амакидс",
+    welcomeLead: "Добро пожаловать в",
+    smartlandName: "Страну Умников",
+    welcomeQuestion: "Готов потренироваться в Академии АМАкидс?",
     words: "Слова",
     numbers: "Числа",
     pictures: "Картинки",
@@ -48,6 +50,10 @@ export const translations = {
     backCampus: "Вернуться в кампус",
     course: "Курс",
     homeworkIntro: "Пять коротких этапов закрепляют материал прошлого занятия. Активный этап можно пройти сейчас.",
+    homeworkMotivation: "Пройди все 5 этапов, чтобы открыть секретные факты для Энциклопедии Страны Умников!",
+    viewFact: "Посмотреть факт",
+    secretFact: "Секретный факт",
+    finalChallenge: "Финальное испытание",
     maximus: "Максимус",
     stage: "Этап",
     locked: "Закрыто",
@@ -69,7 +75,9 @@ export const translations = {
   en: {
     courseProgress: "course complete",
     campusTitle: "Memory Campus",
-    academyName: "Smartland Academy",
+    welcomeLead: "Welcome to",
+    smartlandName: "Smartland",
+    welcomeQuestion: "Ready to train at AMAkids Academy?",
     words: "Words",
     numbers: "Numbers",
     pictures: "Pictures",
@@ -115,6 +123,10 @@ export const translations = {
     backCampus: "Back to campus",
     course: "Course",
     homeworkIntro: "Five short stages reinforce the previous lesson. The active stage is ready now.",
+    homeworkMotivation: "Complete all 5 stages to unlock secret discoveries for the Smartland Encyclopedia!",
+    viewFact: "View fact",
+    secretFact: "Secret fact",
+    finalChallenge: "Final Challenge",
     maximus: "Maximus",
     stage: "Stage",
     locked: "Locked",
@@ -156,7 +168,7 @@ export const zones = {
     title:{ru:"Слова",en:"Words"},
     instruction:{ru:"Я буду показывать слова по одному. Запомни все элементы и воспроизведи их по порядку.",en:"I’ll show the words one at a time. Remember every item and reproduce them in the same order."},
     colors:{base:"#168b83",dark:"#0d5c58"},
-    items:{ru:["Маяк","Арбуз","Ракета","Скрипка","Облако","Компас","Кит","Фонарь","Ключ","Мост","Корона","Лимон"],en:["Lighthouse","Watermelon","Rocket","Violin","Cloud","Compass","Whale","Lantern","Key","Bridge","Crown","Lemon"]}
+    items:{ru:["Маяк","Арбуз","Ракета","Скрипка","Облако","Компас","Кит","Фонарь","Ключ","Мост","Корона","Лимон"],en:["Lamp","Melon","Rocket","Violin","Cloud","Compass","Whale","Lantern","Key","Bridge","Crown","Lemon"]}
   },
   numbers: {
     venue:{ru:"Лаборатория кодов",en:"Code Lab"},
