@@ -10,11 +10,13 @@ The map was produced with the built-in image-generation tool in a composition-pr
 
 `src/assets/images/mindy-welcome-v2.png` is the current transparent, full-body campus cutout. It preserves Mindy's approved face, hairstyle and welcoming gesture while moving her into a brighter uniform: white collared shirt, magenta knitted vest and deep navy pleated skirt. The campus character remains independent from the background so placement and scale can respond to the viewport.
 
-The same cutout is reused on trainer settings screens. This keeps Mindy's face, proportions and preppy uniform consistent across the free-training flow.
+Trainer settings use a dedicated pose variant while keeping Mindy's face, proportions and preppy uniform consistent across the free-training flow.
+
+`src/assets/images/mindy-settings-v1.png` is the settings-specific full-body variant. It preserves that exact face and uniform while restoring the approved calm crossed-arm pose and leaves additional transparent margin so no ears, elbows or shoes are clipped.
 
 ## AMAtraining Maximus
 
-`src/assets/images/maximus-amatraining-v1.png` is the transparent, full-body mentor cutout used on the AMAtraining route. It preserves the approved Maximus identity, academic cap, welcoming tablet pose and white shoes, while using a deeper navy-and-magenta robe that belongs to the discovery-card palette.
+`src/assets/images/maximus-amatraining-v2.png` is the current transparent, full-body mentor cutout used on the AMAtraining route. It preserves the approved Maximus identity, academic cap, welcoming tablet pose and white shoes, while using a brighter royal-indigo robe with restrained magenta trim. The preceding `v1` remains as the darker comparison variant.
 
 The asset was produced with the built-in image-generation tool in identity-preserving edit mode and has no baked-in text, speech bubble or background. The existing `mindy-maximus-v4.png` remains the approved source for the dedicated question and fact screens.
 

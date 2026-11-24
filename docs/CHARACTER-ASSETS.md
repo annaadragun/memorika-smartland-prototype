@@ -2,8 +2,8 @@
 
 ## Runtime assets
 
-- `src/assets/images/mindy-welcome-v2.png` is the shared full-body Mindy cutout for the campus and all trainer settings screens. Her white shirt, magenta vest and navy pleated skirt must remain consistent between those surfaces.
-- `src/assets/images/maximus-amatraining-v1.png` is the full-body Maximus cutout for the discovery-route overview, with an approved tablet pose and navy/magenta academic robe.
+- `src/assets/images/mindy-welcome-v2.png` is the welcoming full-body Mindy cutout for the campus. `mindy-settings-v1.png` preserves her face and the same white-shirt, magenta-vest and navy-skirt uniform while restoring the crossed-arm pose on trainer settings screens.
+- `src/assets/images/maximus-amatraining-v2.png` is the full-body Maximus cutout for the discovery-route overview, with the approved tablet pose and a brighter royal-indigo/magenta academic robe.
 - `src/assets/images/mindy-maximus-v4.png` remains the transparent prototype source used for Maximus on the dedicated AMAtraining question/fact screens.
 
 Characters are intentionally absent from the campus background bitmap. The previous `v2` asset remains as a comparison source but is no longer referenced at runtime.
